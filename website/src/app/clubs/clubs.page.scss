@@ -1,0 +1,46 @@
+ion-content{
+  display:flex;
+  flex-direction: row;
+  --background:white;
+}
+
+*{
+  text-align:center;
+}
+
+ion-col{
+  display:flex;
+  align-items:center;
+}
+
+ion-grid{
+  display:flex;
+  align-items:flex-start;
+}
+
+ion-card{
+  --background:rgb(54, 54, 54);
+  --color:white;
+  color:white;
+  box-shadow: 0 0 10px -1px black;
+  ion-card-header{
+    padding-bottom: 0.4em;
+    background:rgb(39, 39, 39);
+  }
+  ion-card-content{
+    background:rgb(39, 39, 39);
+  }
+  img{
+    padding:1em;
+    height:200%;
+    width:200%;
+    background:whitesmoke;
+    display:block;
+    overflow: hidden;
+  }
+}
+
+ion-card:hover{
+  box-shadow: 0 0 20px 0px red;
+  transition: box-shadow 0.1s 0.1s linear;
+}
