@@ -1,0 +1,62 @@
+<app-navbar></app-navbar>
+
+  <div>
+    <ion-title>Bureau Des Arts - Les Évènements</ion-title>
+  </div>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let event of events" size="12" sizeXs="12" sizeSm="6" sizeMd="6" sizeLg="4" sizeXl="4">
+        <ion-card>
+          <ion-card-header class="ion-no-padding">
+            <img [src]="event.image"/>
+            <ion-card-title><b>{{event.name}}</b></ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-card-subtitle>{{event.description}}</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>evenements</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="height: 98px;"></div>
+
+  <div class="container-fluid" id="events">
+      <div class="row">
+          <div>{{ card.card("Journée BDA SEI",asset("build/images/sei.jpg"),"Le BDA organise une journée d'accueil pour les premières années. Au programme : plusieurs activités en lien avec l'art, tel qu'un défis photos ou encore un concours de chorégraphie. L'objectif de cette journée est avant tout de permettre aux nouveaux arrivants de prendre leur marque et de favoriser la discussion que cela soit entre eux ou avec leurs aînés.") }}</div>
+          <div>{{ card.card("Soiree BDA SEI",asset("build/images/asint_bda.jpg"),"Le BDA organise avec l'Asint (association sportive de l'INT), la première soirée de l'année. Premier avant-goût de nombreuses autres qui rythmeront la vie des étudiants, et cela, même après leur départ pour certains. ") }}</div>
+          <div>{{ card.card("Scéne Ouverte SEI", asset("build/images/scene_ouverte.jpg"), " ") }}</div>
+      </div>
+
+      <div class="row">
+          <div>{{ card.card("Scène Ouverte Novembre", asset("build/images/scene_ouverte2.jpg"), "La deuxième scène ouverte de l'année est dans la même lignée que la première. Certains clubs du BDA viennent se produire devant les yeux attentifs des spectateurs. Danse, musique, magie, théâtre, le programme est divers et variés, mais toujours réalisé avec passion. ") }}</div>
+          <div>{{ card.card("Concert de Noel", asset("build/images/concert_noel.jpg"), "A l'occasion des fêtes de Noël / des célébrations hivernales, le BDA organise un concert, accompagné d'un buffet réalisé par Cook'It (le club de cuisine de l'INT). Lors de cet événement, les spectateurs ont l'occasion d'assister à des prestations musicales et scéniques, et à des chorégraphies de danse. ") }}</div>
+          <div>{{ card.card("Soirée de Noel", asset("build/images/noel.jpg"), "Il s'agit de la plus grosse soirée de l'année où le BDA, l'ASINT et le BDE participent.") }}</div>
+          <div>{{ card.card("Soirée BDA", asset("build/images/soiree.jpg"),"Dans les moindres détails, le BDA se charge d'organiser une soirée afin d'animer la vie du campus. Le thème choisit change chaque année, ainsi que les animations qui si déroulent. ") }}</div>
+      </div>
+
+      <div class="row">
+          <div>{{ card.card("Carnaval", asset("build/images/carnaval.jpg"), "Le temps d'une soirée, le BDA invite les étudiant à célébrer le Carnaval. ") }}</div>
+          <div>{{ card.card("Festivart", asset("build/images/festivart.jpg"), "Le Festiv'art, alias la semaine des arts, est l'un des plus importants événements du BDA. Au cours de cette semaine, diverses activités sont organisées autour d'un thème choisi. L'objectif de cet événement est de faire la promotion des arts, et ce sous toutes ses formes.") }}</div>
+          <div>{{ card.card("Cabaret", asset("build/images/cabaret.jpg"), "Durant le Festiv'art, prends place un autre événement majeur du BDA : le Cabaret. Comme le nom l'indique, le BDA organise un spectacle qui propose au public d'y assister tout en partageant un repas préparé par Cook'It. Le show est assuré par les différents clubs de l'association : danse, théâtre, musique, et bien plus encore sont au programme. ") }}</div>
+          <div>{{ card.card("Int Got Talent",asset("build/images/intgt.jpg"), "Le BDA, part le biais de l'INT Got Talent, invite les étudiants à montrer leur talent. À la différence d'une scène ouverte, il s'agit d'un concours, il y a donc un jury et des prix pour les gagnants. De plus, cet événement ne s'adresse pas aux clubs, mais directement aux étudiants désirant partager leur savoir-faire unique, dans des domaines parfois des plus étonnants.") }}</div>
+      </div>
+      <div class="row">
+          <div>{{ card.card("Sorties RA", asset("build/images/ra.jpg"), "Tout au long de l'année, le pôle relation artistique propose (aux membres du BDA?) des sorties en lien avec l'art, et ce, à des tarifs préférentiels. Pièces de théâtre, comédies musicales, et bien plus encore, seront de mises.") }}</div>
+      </div>
+
+  </div>
+</ion-content>
+
+-->

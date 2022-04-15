@@ -8,12 +8,28 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'accueil',
     pathMatch: 'full'
   },
   {
     path: 'clubs',
     loadChildren: () => import('./clubs/clubs.module').then( m => m.ClubsPageModule)
+  },
+  {
+    path: 'accueil',
+    loadChildren: () => import('./accueil/accueil.module').then( m => m.AccueilPageModule)
+  },
+  {
+    path: 'tests',
+    loadChildren: () => import('./tests/tests.module').then( m => m.TestsPageModule)
+  },
+  {
+    path: 'evenements',
+    loadChildren: () => import('./evenements/evenements.module').then( m => m.EvenementsPageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   },
 ];
 

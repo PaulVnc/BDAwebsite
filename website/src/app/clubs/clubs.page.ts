@@ -41,7 +41,8 @@ export class ClubsPage implements OnInit {
       name:'CinéClub',
       desc:'Club de cinématographie',
       info:'Le CinéClub organise des projections de films tous les lundi, '
-      +'et organise également des "48h", évènements pendant lesquels il faut réaliser un court-métrage de A à Z en équipe durant les 48h imparties !',
+      +'et organise également des "48h",'
+      +' évènements pendant lesquels il faut réaliser un court-métrage de A à Z en équipe durant les 48h imparties !',
       image:'/assets/images/CinéClub.png'
     },
     {
@@ -132,7 +133,11 @@ export class ClubsPage implements OnInit {
       image:'/assets/images/INTerlude.png'
     },
     {
-
+      name:'Spades',
+      desc:'club de magie',
+      info:'Centré autour de la manipulation des cartes on peut y apprendre des tours spectaculaires mais aussi des mélanges'
+          +' et coupes de cartes renversants',
+      image:'/assets/images/Spades.png'
     }
 ];
 

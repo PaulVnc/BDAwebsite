@@ -1,0 +1,13 @@
+ion-title{
+  text-align: center;
+}
+ion-content{
+  text-align: center;
+}
+a{
+  text-decoration:none;
+  color:crimson;
+  &:hover{
+    color:red;
+  }
+}

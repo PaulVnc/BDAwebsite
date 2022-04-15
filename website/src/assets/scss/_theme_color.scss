@@ -1,0 +1,109 @@
+/*
+
+Palette
+
+ */
+$red_light0: #ff0000;
+$red_light20: #ff1414;
+$red_light40: #ff2828;
+$red_light60: #ff3c3c;
+$red_light80: #ff5050;
+$red_light100: #ff6464;
+$red_light120: #ff7878;
+$red_light140: #ff8c8c;
+$red_light160: #ffa0a0;
+
+$red0: #ff0000;
+$red20: #eb0000;
+$red40: #d70000;
+$red60: #c30000;
+$red80: #af0000;
+$red100: #9b0000;
+$red120: #870000;
+$red140: #730000;
+$red160: #5f0000;
+$red180: #4b0000;
+$red200: #370000;
+$red220: #230000;
+
+$black255: #000000;
+$black220: #232323;
+
+
+
+$primary_red: #f1404b;
+$primary_grey: #dddfe6;
+$primary_white: #f4f5f9;
+$primary_blue: #252c41;
+$primary_black: #1e2022;
+
+
+$secondary-pink: #FD5698;
+$secondary-cyan: #74D9CD;
+$secondary-blue: #5B70E3;
+$secondary-green: #B5CB23;
+
+/*
+Theme
+1. GLOBAL STYLES
+2. NAVBAR
+3. HERO
+4. TABS
+5. TESTIMONIALS
+6. IMAGE GALLERY
+7. PRICING
+8. CALL TO ACTION
+9. FOOTER
+ */
+
+//Global Styles
+//TODO: refactor les themes
+
+$h2-color: #633991;
+
+$a_color: $red0;
+
+$a_mouse_color: $red20;
+
+$p-color: #565256;
+$p-lead-color: #e38cb7;
+
+$btn-outline: #d6619c;
+
+$btn-primary-bg1: #e54595;
+$btn-primary-bg2: #fd378e;
+
+
+
+//Hero
+
+$bg-gradient1: $red100;
+$bg-gradient2: $red0;
+
+$nav-menu1: $red120;
+$nav-menu2: $red20;
+
+$nav-active: $red_light100;
+
+
+$circle_icon_color: #f53737;
+$circle_icon_bg1: #e63939;
+$circle_icon_bg2: #fa3737;
+
+
+$gradient-fill-bg1: #9477b4;
+$gradient-fill-bg2: #fc73b4;
+
+
+
+
+@mixin prefix($map, $vendors: webkit moz ms o) {
+  @each $prop, $value in $map {
+    @if $vendors {
+      @each $vendor in $vendors {
+        #{"-" + $vendor + "-" + $prop}: #{$value};
+      }
+    }
+    #{$prop}: #{$value};
+  }
+}

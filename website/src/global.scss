@@ -29,4 +29,8 @@
 
 *{
   font-family: 'Oxygen', sans-serif;
+  scrollbar-width: none;
+  &::-webkit-scrollbar{
+    display:none;
+  }
 }

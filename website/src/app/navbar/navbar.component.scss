@@ -1,0 +1,13 @@
+div{
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(90deg, rgba(169,0,0,0.2) 0%, rgba(169,0,0,1) 50%,rgba(169,0,0,0.2) 100%);
+}
+
+ion-button{
+  --background:none;
+
+}
