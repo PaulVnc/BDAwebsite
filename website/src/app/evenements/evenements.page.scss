@@ -1,6 +1,18 @@
 ion-title,ion-card-title{
   text-align: center;
 }
+
+ion-card-title{
+  --color:rgb(255, 69, 69);
+}
 ion-card-content{
   text-align: justify;
+  color:rgb(233, 233, 233);
+  text-decoration: none;
+  text-transform: none;
+  font-weight:300;
+}
+
+ion-content{
+  --background:linear-gradient(90deg, rgba(169,0,0,0.2) 0%, rgb(138, 12, 12) 50%,rgba(169,0,0,0.2) 100%);
 }
