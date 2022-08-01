@@ -8,16 +8,19 @@
   <ion-grid>
     <ion-row>
       <ion-col *ngFor="let club of clubs" size="12" sizeXs="12" sizeSm="6" sizeMd="4" sizeLg="3" sizeXl="3">
-        <ion-card>
-          <ion-card-header class="ion-no-padding">
-            <img [src]="club.image"/>
-            <ion-card-title><b>{{club.name}}</b></ion-card-title>
-            <ion-card-subtitle>{{club.desc}}</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            {{club.info}}
-          </ion-card-content>
-        </ion-card>
+        <div class="card">
+          <div class="flip" >
+            <div class="flip-recto">
+              <img [src]="club.image"/>
+              <div class="card-title"><b>{{club.name}}</b></div>
+              <div>{{club.desc}}</div>
+            </div>
+
+            <div class="flip-verso">
+              <div>{{club.info}}</div>
+            </div>
+          </div>
+        </div>
       </ion-col>
     </ion-row>
   </ion-grid>

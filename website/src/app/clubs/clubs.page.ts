@@ -18,8 +18,8 @@ export class ClubsPage implements OnInit {
     },
     {
       name:'Club Jeux',
-      desc:'Club de jeux et divertissement',
-      info:'Le club jeux regorge de moyens de divertissement, allant des jeux de société aux jeux vidéos en passant par le billard',
+      desc:'Club de jeux et divertissements',
+      info:'Le club jeux regorge de moyens de se divertir, allant des jeux de société aux jeux vidéos en passant par le billard',
       image:'/assets/images/CJ.png'
     },
     {
